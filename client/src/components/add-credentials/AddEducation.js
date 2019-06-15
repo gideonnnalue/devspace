@@ -70,11 +70,11 @@ class AddEducation extends Component {
               <Link to="/dashboard" className="btn btn-light">
                 Go Back
               </Link>
-              <h1 className="display-4 text-center">Add Education</h1>
-              <p className="lead text-center">
+              <h1 className="display-4 text-center text-white">Add Education</h1>
+              <p className="lead text-center text-white">
                 Add any school, bootcamp, etc that you have attended
               </p>
-              <small className="d-block pb-3">* = required fields</small>
+              <small className="d-block pb-3 text-white">* = required fields</small>
               <form onSubmit={this.onSubmit}>
                 <TextFieldGroup
                   placeholder="* school"
@@ -100,7 +100,7 @@ class AddEducation extends Component {
                   error={errors.fieldofstudy}
                 />
 
-                <h6>From Date</h6>
+                <h6 className="text-white">From Date</h6>
                 <TextFieldGroup
                   name="from"
                   type="date"
@@ -109,7 +109,7 @@ class AddEducation extends Component {
                   error={errors.from}
                 />
 
-                <h6>To Date</h6>
+                <h6 className="text-white">To Date</h6>
                 <TextFieldGroup
                   name="to"
                   type="date"
@@ -129,7 +129,7 @@ class AddEducation extends Component {
                     onChange={this.onCheck}
                     id="current"
                   />
-                  <label htmlFor="current" className="form-check-label">
+                  <label htmlFor="current" className="form-check-label text-white">
                     Current Job
                   </label>
                 </div>
@@ -144,7 +144,7 @@ class AddEducation extends Component {
                 <input
                   type="submit"
                   value="Submit"
-                  className="btn btn-info btn-block m-4"
+                  className="btn btn-info btn-block m-4 button button--submit"
                 />
               </form>
             </div>

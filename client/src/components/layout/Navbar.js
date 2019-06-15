@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "../../actions/authActions";
 import { clearCurrentProfile } from "../../actions/profileActions";
+import logo from "../../img/logo.png";
 
 class Navbar extends Component {
   onLogoutClick(e) {
@@ -18,12 +19,12 @@ class Navbar extends Component {
     const guestLinks = (
       <ul className="navbar-nav ml-auto">
         <li className="nav-item">
-          <NavLink className="nav-link" to="/register">
+          <NavLink className="nav-link navigation-link" to="/register">
             Sign Up
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink className="nav-link" to="/login">
+          <NavLink className="nav-link navigation-link" to="/login">
             Login
           </NavLink>
         </li>
@@ -33,13 +34,13 @@ class Navbar extends Component {
     const authLinks = (
       <ul className="navbar-nav ml-auto">
         <li className="nav-item">
-          <NavLink className="nav-link" to="/feed">
+          <NavLink className="nav-link navigation-link " to="/feed">
             {" "}
             Post Feed
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink className="nav-link" to="/dashboard">
+          <NavLink className="nav-link navigation-link" to="/dashboard">
             {" "}
             Dashboard
           </NavLink>
@@ -64,10 +65,10 @@ class Navbar extends Component {
     );
     return (
       <div>
-        <nav className="navbar navbar-expand-sm navbar-dark bg-dark mb-4">
+        <nav className="navbar navbar-expand-sm navbar-dark bg-dark mb-4 navigation">
           <div className="container">
             <NavLink className="navbar-brand" to="/">
-              DevConnector
+              <img src={logo} alt="logo" style={{width: "150px"}}/>
             </NavLink>
             <button
               className="navbar-toggler"
@@ -81,7 +82,7 @@ class Navbar extends Component {
             <div className="collapse navbar-collapse" id="mobile-nav">
               <ul className="navbar-nav mr-auto">
                 <li className="nav-item">
-                  <NavLink className="nav-link" to="/profiles">
+                  <NavLink className="nav-link navigation-link" to="/profiles">
                     {" "}
                     Developers
                   </NavLink>

@@ -20,7 +20,7 @@ const SelectListGroup = props => {
   return (
     <div className="form-group">
       <select
-        className={classnames("form-control form-control-lg", {
+        className={classnames("form-control form-control-lg form-textfield", {
           "is-invalid": error
         })}
         name={name}

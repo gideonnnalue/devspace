@@ -1,0 +1,40 @@
+.button {
+    border-radius: 50px;
+
+    &__auth {
+        background-color: transparent;
+        text-transform: uppercase;
+        padding: 8px 30px;
+
+        &--signup {
+            border: 2px solid $color-white;
+        }
+
+        &--login {
+            border: 2px solid $color-primary;
+            background-color: $color-primary;
+            color: $color-white;
+            padding: 8px 40px;
+        }
+    }
+
+    &--submit {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: $color-primary;
+        text-transform: uppercase;
+    }
+
+    &--others {
+        background-color: $color-blue-4;
+        color:  #d8d8d8;
+        border: 0;
+
+        &:hover {
+            background-color: lighten($color-blue-4, 5);
+            color: #d8d8d8;
+        }
+    }
+ 
+}
+

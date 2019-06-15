@@ -57,9 +57,9 @@ class Login extends Component {
           <div className="container">
             <div className="row">
               <div className="col-md-8 m-auto">
-                <h1 className="display-4 text-center">Log In</h1>
-                <p className="lead text-center">
-                  Sign in to your DevConnector account
+                <h1 className="display-4 text-center text-white">Log In</h1>
+                <p className="lead text-center text-white">
+                  Sign in to your DevSpace account
                 </p>
                 <form onSubmit={this.onSubmit}>
                   <TextFieldGroup 
@@ -82,7 +82,7 @@ class Login extends Component {
                   
                   <input
                     type="submit"
-                    className="btn btn-info btn-block mt-4"
+                    className="btn btn-info btn-block mt-4 button button--submit"
                   />
                 </form>
               </div>

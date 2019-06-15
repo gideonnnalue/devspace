@@ -15,12 +15,12 @@ const InputGroup = props => {
   return (
     <div className="input-group mb-3">
         <div className="input-group-prepend">
-            <div className="input-group-text">
+            <div className="input-group-text form-textfield">
                 <i className={icon}></i>
             </div>
         </div>
       <input
-        className={classnames("form-control form-control-lg", {
+        className={classnames("form-control form-control-lg form-textfield", {
           "is-invalid": error
         })}
         placeholder={placeholder}

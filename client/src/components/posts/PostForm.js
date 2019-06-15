@@ -44,9 +44,9 @@ class PostForm extends Component {
       const { errors } = this.state;
     return (
       <div className="post-form mb-3">
-        <div className="card card-info">
+        <div className="card card-info form">
           <div className="card-header bg-info text-white">Say Somthing...</div>
-          <div className="card-body">
+          <div className="card-body form-body">
             <form onSubmit={this.onSubmit}>
               <div className="form-group">
                   <TextAreaFieldGroup 

@@ -1,0 +1,29 @@
+.form-textfield {
+    border-radius: 50px;
+    background: transparent;
+    color: $color-primary !important;
+
+    &:focus,
+    &:active,
+    &:target,
+    &:enabled,
+    &::after {
+        border-color: $color-primary;
+        background-color: transparent !important;
+    }
+}
+
+.textarea-group {
+    // border-radius: 50px;
+    background: transparent;
+    color: $color-primary !important;
+
+    &:focus,
+    &:active,
+    &:target,
+    &:enabled,
+    &::after {
+        border-color: $color-primary;
+        background-color: transparent !important;
+    }
+}

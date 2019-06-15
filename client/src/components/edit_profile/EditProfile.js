@@ -201,9 +201,9 @@ class EditProfile extends Component {
             <Link to="/dashboard" className="btn btn-light">
                 Go Back
               </Link>
-              <h1 className="display-4 text-center">Edit Profile</h1>
+              <h1 className="display-4 text-center text-white">Edit Profile</h1>
               
-              <small className="d-block pb-3">* = required fields</small>
+              <small className="d-block pb-3 text-white">* = required fields</small>
               <form onSubmit={this.onSubmit}>
                 <TextFieldGroup
                   placeholder="* Profile Handle"
@@ -278,7 +278,7 @@ class EditProfile extends Component {
                         displaySocialInput: !prevState.displaySocialInput
                       }))
                     }
-                    className="btn btn-light"
+                    className="btn btn-light button button--others mr-3"
                   >
                     Add Social Network Links
                   </button>
@@ -288,7 +288,7 @@ class EditProfile extends Component {
                 <input
                   type="submit"
                   value="Submit"
-                  className="btn btn-info btn-block mt-4"
+                  className="btn btn-info btn-block mt-4 button button--submit"
                 />
               </form>
             </div>
